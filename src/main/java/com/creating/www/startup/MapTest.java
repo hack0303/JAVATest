@@ -12,7 +12,7 @@ public class MapTest {
 		// TODO Auto-generated method stub
 /*测试001*/
 		/*
-		Test001 t001=new Test001();
+		Test002 t001=new Test002();
         t001.putN(1000);
         t001.printAll();
         */

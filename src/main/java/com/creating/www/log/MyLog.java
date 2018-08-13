@@ -1,7 +1,5 @@
 package com.creating.www.log;
 
-import org.apache.logging.log4j.Logger;
-
 public class MyLog {
 
 	public MyLog() {
