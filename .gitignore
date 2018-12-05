@@ -1,1 +1,7 @@
-
+/.classpath
+/.gitignore
+/.project
+/target/
+/bin/
+/.settings/
+/.externalToolBuilders/
