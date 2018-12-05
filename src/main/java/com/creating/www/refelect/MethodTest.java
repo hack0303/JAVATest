@@ -1,5 +1,7 @@
 package com.creating.www.refelect;
 
+import java.lang.reflect.ReflectPermission;
+
 public class MethodTest {
 
 	public MethodTest() {
@@ -8,7 +10,7 @@ public class MethodTest {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-
+     //Reflect
 	}
 
 }
