@@ -11,12 +11,12 @@ public class Test001 {
 	}
 
 	public static void main(String[] args) {
-		Clock c=null;
-       
+		Clock c = null;
+
 	}
-	public <B extends Test001> B getR(B b) 
-	{
-		Set<Integer> s=new TreeSet<Integer>();
+
+	public <B extends Test001> B getR(B b) {
+		Set<Integer> s = new TreeSet<Integer>();
 		return b;
 	}
 

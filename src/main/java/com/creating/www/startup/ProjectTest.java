@@ -4,7 +4,6 @@ import java.util.Random;
 
 import com.creating.www.project.AlarmModel;
 
-
 public class ProjectTest {
 
 	public ProjectTest() {
@@ -13,10 +12,10 @@ public class ProjectTest {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		for(int i=0;i<1000;i++) {
-			AlarmModel am=new AlarmModel();
-		    am.id=new Integer(new Random().nextInt());
-		    System.out.println("---------------hashcode@"+am.hashCode());
+		for (int i = 0; i < 1000; i++) {
+			AlarmModel am = new AlarmModel();
+			am.id = new Integer(new Random().nextInt());
+			System.out.println("---------------hashcode@" + am.hashCode());
 		}
 	}
 

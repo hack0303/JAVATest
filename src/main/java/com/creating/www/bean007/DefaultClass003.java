@@ -5,6 +5,7 @@ public class DefaultClass003 {
 	int b;
 	int c;
 	int d;
+
 	protected DefaultClass003() {
 		// TODO Auto-generated constructor stub
 	}

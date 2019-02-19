@@ -11,16 +11,14 @@ public class Test001 {
 	}
 
 	public static void main(String[] args) {
-		Random rd=new Random();
-		List<Integer> list=new ArrayList<Integer>();
-		for(int i=0;i<10;i++) 
-		{
+		Random rd = new Random();
+		List<Integer> list = new ArrayList<Integer>();
+		for (int i = 0; i < 10; i++) {
 			list.add(i);
 		}
-		for(int x=10;x>0;x--) 
-		{
+		for (int x = 10; x > 0; x--) {
 			System.out.println(list.remove(rd.nextInt(x)));
-		
+
 		}
 
 	}

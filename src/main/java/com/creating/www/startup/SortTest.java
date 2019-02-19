@@ -7,7 +7,8 @@ public class SortTest {
 	public SortTest() {
 		// TODO Auto-generated constructor stub
 	}
-public static void main(String[] args) {
-	new Test();
-}
+
+	public static void main(String[] args) {
+		new Test();
+	}
 }

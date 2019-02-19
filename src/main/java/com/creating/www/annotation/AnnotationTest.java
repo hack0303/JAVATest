@@ -1,6 +1,6 @@
 package com.creating.www.annotation;
 
-@HEHE(info="王八蛋")
+@HEHE(info = "王八蛋")
 public class AnnotationTest {
 
 	public AnnotationTest() {
@@ -10,7 +10,7 @@ public class AnnotationTest {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		System.out.println(AnnotationTest.class.getAnnotation(HEHE.class).info());
-		
+
 	}
 
 }

@@ -7,7 +7,7 @@ public class SplitTest001 {
 	}
 
 	public static void main(String[] args) {
-		final String str="a b c  d";
+		final String str = "a b c  d";
 		System.out.println(str.split(" ").length);
 
 	}

@@ -7,7 +7,8 @@ public class ClassInitArgsTest {
 	public ClassInitArgsTest() {
 		// TODO Auto-generated constructor stub
 	}
-public static void main(String[] args){
-	new PrintUnit();
-}
+
+	public static void main(String[] args) {
+		new PrintUnit();
+	}
 }

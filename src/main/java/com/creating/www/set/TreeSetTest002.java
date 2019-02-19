@@ -12,35 +12,36 @@ public class TreeSetTest002 {
 	}
 
 	public static void main(String[] args) {
-		Set<TObject> tos=new TreeSet<TObject>();
-		TObject tobj=new TObject();
-		tobj.index=0;
-		tobj.x=1;
-		tobj.y=1;
+		Set<TObject> tos = new TreeSet<TObject>();
+		TObject tobj = new TObject();
+		tobj.index = 0;
+		tobj.x = 1;
+		tobj.y = 1;
 		tos.add(tobj);
-		tobj=new TObject();
-		tobj.index=1;
-		tobj.x=1;
-		tobj.y=1;
+		tobj = new TObject();
+		tobj.index = 1;
+		tobj.x = 1;
+		tobj.y = 1;
 		tos.add(tobj);
 		System.out.println(tos);
-		tobj=new TObject();
-		tobj.index=1;
-		tobj.x=1;
-		tobj.y=1;
+		tobj = new TObject();
+		tobj.index = 1;
+		tobj.x = 1;
+		tobj.y = 1;
 		System.out.println(tos.contains(tobj));
-		System.out.println(((TreeSet<TObject>)tos).first());
+		System.out.println(((TreeSet<TObject>) tos).first());
 
 	}
-	public static class TObject implements Comparable<Object>
-	{
+
+	public static class TObject implements Comparable<Object> {
 		public int index;
-        public int x;
-        public int y;
+		public int x;
+		public int y;
+
 		@Override
 		public int compareTo(Object o) {
 			TObject other = (TObject) o;
-			return this.index-other.index;
+			return this.index - other.index;
 		}
 
 		@Override
@@ -60,15 +61,15 @@ public class TreeSetTest002 {
 			if (getClass() != obj.getClass())
 				return false;
 			TObject other = (TObject) obj;
-			if(this.x==other.x&&(this.y==other.y)) 
-		     return true;
+			if (this.x == other.x && (this.y == other.y))
+				return true;
 			return false;
 		}
-		
+
 		@Override
 		public String toString() {
 			// TODO Auto-generated method stub
-			return this.index+":"+this.x+":"+this.y;
+			return this.index + ":" + this.x + ":" + this.y;
 		}
 	}
 

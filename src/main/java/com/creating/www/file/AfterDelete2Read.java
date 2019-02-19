@@ -14,11 +14,11 @@ public class AfterDelete2Read {
 	}
 
 	public static void main(String[] args) throws IOException {
-		File file=new File("doc/test.txt");
-        FileReader fr=new FileReader(file);
-        BufferedReader br=new BufferedReader(fr);
-       System.out.println(br.readLine());
-      // file.delete();
+		File file = new File("doc/test.txt");
+		FileReader fr = new FileReader(file);
+		BufferedReader br = new BufferedReader(fr);
+		System.out.println(br.readLine());
+		// file.delete();
 	}
 
 }

@@ -9,7 +9,9 @@ import java.lang.annotation.Target;
 @Retention(SOURCE)
 @Target(FIELD)
 public @interface Test {
-int x() default 1;
-int[] xArray();
-float y() default 0;
+	int x() default 1;
+
+	int[] xArray();
+
+	float y() default 0;
 }

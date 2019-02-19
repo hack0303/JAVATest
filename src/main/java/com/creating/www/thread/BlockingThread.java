@@ -5,25 +5,23 @@ import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.LinkedBlockingQueue;
 
 public class BlockingThread {
-private static BlockingQueue queue=new LinkedBlockingQueue(50);
+	private static BlockingQueue queue = new LinkedBlockingQueue(50);
+
 	public BlockingThread() {
 		// TODO Auto-generated constructor stub
 	}
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-    for(int i=0;i<60;i++) 
-    {
-    	try {
-			queue.put(new Random().nextInt(100));
+		for (int i = 0; i < 60; i++) {
+			try {
+				queue.put(new Random().nextInt(100));
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 		}
-    	catch (InterruptedException e) 
-    	{
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-    }
-    System.out.println(queue.size());
+		System.out.println(queue.size());
 	}
 
 }

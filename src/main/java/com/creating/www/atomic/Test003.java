@@ -9,9 +9,9 @@ public class Test003 {
 	}
 
 	public static void main(String[] args) {
-		Integer value=new Integer(1);
-		AtomicReference<Integer> aRefer=new AtomicReference<Integer>(value);
-		aRefer.compareAndSet(1,2);
+		Integer value = new Integer(1);
+		AtomicReference<Integer> aRefer = new AtomicReference<Integer>(value);
+		aRefer.compareAndSet(1, 2);
 
 	}
 

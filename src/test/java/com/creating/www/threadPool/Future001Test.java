@@ -12,27 +12,28 @@ import java.util.concurrent.ThreadPoolExecutor;
 import org.junit.Test;
 
 public class Future001Test {
-     Executor e=Executors.newFixedThreadPool(10);
-     List<Future<Integer>> array=new ArrayList<Future<Integer>>();
+	Executor e = Executors.newFixedThreadPool(10);
+	List<Future<Integer>> array = new ArrayList<Future<Integer>>();
+
 	public Future001Test() {
 		// TODO Auto-generated constructor stub
 	}
-	@Test
-    public void test001() 
-    {
-		for(int i=0;i<1000;i++) {
-      array.add( ((ThreadPoolExecutor)e).submit(new Callable<Integer>() {
 
-		@Override
-		public Integer call() throws Exception {
-			 return new Integer(1);
+	@Test
+	public void test001() {
+		for (int i = 0; i < 1000; i++) {
+			array.add(((ThreadPoolExecutor) e).submit(new Callable<Integer>() {
+
+				@Override
+				public Integer call() throws Exception {
+					return new Integer(1);
+				}
+			}));
 		}
-	}) );
-		}
-		Future<Integer> a=null;
-		array.forEach(x->{
+		Future<Integer> a = null;
+		array.forEach(x -> {
 			try {
-			System.out.println(x.get());
+				System.out.println(x.get());
 			} catch (InterruptedException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
@@ -41,5 +42,5 @@ public class Future001Test {
 				e.printStackTrace();
 			}
 		});
-    }
+	}
 }

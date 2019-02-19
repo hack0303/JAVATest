@@ -7,7 +7,7 @@ public class MainTest {
 	}
 
 	public static void main(String[] args) {
-		ClassLoader clazzLoader=ClassLoader.getSystemClassLoader();
+		ClassLoader clazzLoader = ClassLoader.getSystemClassLoader();
 		System.out.println(ClassLoader.getSystemClassLoader());
 		System.out.println(ClassLoader.getSystemClassLoader().getParent());
 		System.out.println(ClassLoader.getSystemClassLoader().getParent().getParent());

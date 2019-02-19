@@ -7,9 +7,9 @@ public class Test001 {
 	}
 
 	public static void main(String[] args) {
-		System.out.println("length: "+args.length);
-		if(args.length>0)
-		System.out.println(args[0]);
+		System.out.println("length: " + args.length);
+		if (args.length > 0)
+			System.out.println(args[0]);
 		System.exit(0);
 	}
 

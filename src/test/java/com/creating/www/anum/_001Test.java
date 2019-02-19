@@ -6,13 +6,13 @@ public class _001Test {
 	public _001Test() {
 		// TODO Auto-generated constructor stub
 	}
-	static enum Member
-	{
-	  x,y,z;
+
+	static enum Member {
+		x, y, z;
 	}
+
 	@Test
-	public void testX() 
-	{
+	public void testX() {
 		System.out.println(Member.x);
 
 		System.out.println(Member.y);

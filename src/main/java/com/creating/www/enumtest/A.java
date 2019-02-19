@@ -5,8 +5,8 @@ public class A {
 	public A() {
 		// TODO Auto-generated constructor stub
 	}
-   public enum Type
-    {
-    	a,b,c;
-    }
+
+	public enum Type {
+		a, b, c;
+	}
 }

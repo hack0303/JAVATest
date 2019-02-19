@@ -1,6 +1,5 @@
 package com.creating.www.refelect;
 
-
 public class ClassTest {
 
 	public ClassTest() {
@@ -10,7 +9,7 @@ public class ClassTest {
 	public static void main(String[] args) throws ClassNotFoundException {
 		// TODO Auto-generated method stub
 		System.out.println("");
-     Class clazz=Class.forName("com.creating.www.refelect.TestTarget");
+		Class clazz = Class.forName("com.creating.www.refelect.TestTarget");
 	}
 
 }

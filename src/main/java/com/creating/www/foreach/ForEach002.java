@@ -11,9 +11,9 @@ public class ForEach002 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Integer[] ints= {new Integer(0)};
-    List<Integer> list=new ArrayList<Integer>();
-    
+		Integer[] ints = { new Integer(0) };
+		List<Integer> list = new ArrayList<Integer>();
+
 	}
 
 }

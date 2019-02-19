@@ -12,16 +12,16 @@ public class ExceptionTest002 {
 		System.out.println(getSomeThing());
 
 	}
-	private static int getSomeThing() 
-	{
-		int i=0;
+
+	private static int getSomeThing() {
+		int i = 0;
 		try {
 			i++;
-		return i;
+			return i;
+		} finally {
+			i++;
+			System.out.println("final:" + i);
 		}
-		finally 
-		{i++;
-		System.out.println("final:"+i);}
 	}
 
 }

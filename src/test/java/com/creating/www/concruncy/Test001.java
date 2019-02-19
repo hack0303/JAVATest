@@ -7,8 +7,8 @@ public class Test001 {
 	}
 
 	public static void main(String[] args) {
-	A a=new B();
-	a.go();
+		A a = new B();
+		a.go();
 
 	}
 

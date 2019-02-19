@@ -7,11 +7,11 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 
 public class EnumTest {
-   static Logger logger=LogManager.getLogger(EnumTest.class.getName());
+	static Logger logger = LogManager.getLogger(EnumTest.class.getName());
+
 	@BeforeClass
 	public static void setUpBeforeClass() throws Exception {
 
-		
 	}
 
 	@AfterClass
@@ -20,13 +20,13 @@ public class EnumTest {
 
 	@Test
 	public void test() {
-	log("A","B");
+		log("A", "B");
 	}
-	public static void log(String a,String b) 
-	{
-		logger.entry(a,b);
+
+	public static void log(String a, String b) {
+		logger.entry(a, b);
 		logger.trace("start");
-		logger.info("nihao {}","hehe");
+		logger.info("nihao {}", "hehe");
 		logger.trace("end");
 		logger.exit();
 	}

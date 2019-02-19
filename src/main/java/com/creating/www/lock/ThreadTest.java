@@ -8,18 +8,19 @@ import java.util.concurrent.CyclicBarrier;
 import java.util.function.Consumer;
 
 public class ThreadTest {
-    private static List<Integer> list=Collections.synchronizedList(new ArrayList<Integer>());
-    static CyclicBarrier cb=new CyclicBarrier(5);
+	private static List<Integer> list = Collections.synchronizedList(new ArrayList<Integer>());
+	static CyclicBarrier cb = new CyclicBarrier(5);
+
 	public ThreadTest() {
 		// TODO Auto-generated constructor stub
 	}
 
 	public static void main(String[] args) {
-		for(int i=0;i<1000;i++)
+		for (int i = 0; i < 1000; i++)
 			list.add(i);
 		// TODO Auto-generated method stub
 		new Thread(new Runnable() {
-			
+
 			@Override
 			public void run() {
 				try {
@@ -31,18 +32,18 @@ public class ThreadTest {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}
-				  list.forEach(new Consumer<Integer>() {
-						@Override
-						public void accept(Integer t) {
-							System.out.println(t);	
-						}
-					});
-				//for(int i:list)
-				//	System.out.println(i);
+				list.forEach(new Consumer<Integer>() {
+					@Override
+					public void accept(Integer t) {
+						System.out.println(t);
+					}
+				});
+				// for(int i:list)
+				// System.out.println(i);
 			}
 		}).start();
-	new Thread(new Runnable() {
-			
+		new Thread(new Runnable() {
+
 			@Override
 			public void run() {
 				try {
@@ -54,53 +55,53 @@ public class ThreadTest {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}
-			for(int i=0;i<1000;i++)
-				list.add(i);
+				for (int i = 0; i < 1000; i++)
+					list.add(i);
 			}
 		}).start();
-	new Thread(new Runnable() {
-		
-		@Override
-		public void run() {
-			try {
-				cb.await();
-			} catch (InterruptedException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			} catch (BrokenBarrierException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
+		new Thread(new Runnable() {
+
+			@Override
+			public void run() {
+				try {
+					cb.await();
+				} catch (InterruptedException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				} catch (BrokenBarrierException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+				for (int i = 0; i < 1000; i++)
+					list.add(i);
 			}
-		for(int i=0;i<1000;i++)
-			list.add(i);
-		}
-	}).start();
-	new Thread(new Runnable() {
-		
-		@Override
-		public void run() {
-			try {
-				cb.await();
-			} catch (InterruptedException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			} catch (BrokenBarrierException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
+		}).start();
+		new Thread(new Runnable() {
+
+			@Override
+			public void run() {
+				try {
+					cb.await();
+				} catch (InterruptedException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				} catch (BrokenBarrierException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+				for (int i = 0; i < 1000; i++)
+					list.add(i);
 			}
-		for(int i=0;i<1000;i++)
-			list.add(i);
+		}).start();
+		try {
+			cb.await();
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (BrokenBarrierException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
 		}
-	}).start();
-	try {
-		cb.await();
-	} catch (InterruptedException e) {
-		// TODO Auto-generated catch block
-		e.printStackTrace();
-	} catch (BrokenBarrierException e) {
-		// TODO Auto-generated catch block
-		e.printStackTrace();
-	}
 	}
 
 }

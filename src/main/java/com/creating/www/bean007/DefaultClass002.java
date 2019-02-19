@@ -5,7 +5,8 @@ public class DefaultClass002 {
 	int b;
 	int c;
 	int d;
-	 DefaultClass002() {
+
+	DefaultClass002() {
 		// TODO Auto-generated constructor stub
 	}
 

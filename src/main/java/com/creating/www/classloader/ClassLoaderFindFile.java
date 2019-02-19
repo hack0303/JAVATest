@@ -10,16 +10,16 @@ public class ClassLoaderFindFile {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-     URL url=ClassLoaderFindFile.class.getResource("/classpath.txt");
-    System.out.println(url);
-    url=ClassLoaderFindFile.class.getResource("ClassLoaderFindFile.class");
-    System.out.println(url);
-    url=ClassLoaderFindFile.class.getClassLoader().getResource("ClassLoaderFindFile.class");
-    System.out.println(url);
-    url=ClassLoaderFindFile.class.getClassLoader().getResource("classpath.txt");
-    System.out.println(url);
-    url=ClassLoaderFindFile.class.getClassLoader().getResource("/classpath.txt");
-    System.out.println(url);
+		URL url = ClassLoaderFindFile.class.getResource("/classpath.txt");
+		System.out.println(url);
+		url = ClassLoaderFindFile.class.getResource("ClassLoaderFindFile.class");
+		System.out.println(url);
+		url = ClassLoaderFindFile.class.getClassLoader().getResource("ClassLoaderFindFile.class");
+		System.out.println(url);
+		url = ClassLoaderFindFile.class.getClassLoader().getResource("classpath.txt");
+		System.out.println(url);
+		url = ClassLoaderFindFile.class.getClassLoader().getResource("/classpath.txt");
+		System.out.println(url);
 	}
 
 }

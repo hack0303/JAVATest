@@ -5,6 +5,7 @@ public class DefaultClass001 {
 	int b;
 	int c;
 	int d;
+
 	private DefaultClass001() {
 	}
 

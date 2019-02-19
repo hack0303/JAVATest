@@ -4,7 +4,7 @@ import java.util.Collection;
 import java.util.Map;
 import java.util.Set;
 
-public class TestMap<K,V> implements Map<K, V> {
+public class TestMap<K, V> implements Map<K, V> {
 
 	public TestMap() {
 		// TODO Auto-generated constructor stub
@@ -55,13 +55,13 @@ public class TestMap<K,V> implements Map<K, V> {
 	@Override
 	public void putAll(Map<? extends K, ? extends V> m) {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 	@Override
 	public void clear() {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 	@Override

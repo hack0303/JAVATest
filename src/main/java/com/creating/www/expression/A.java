@@ -7,8 +7,8 @@ public class A {
 	}
 
 	public static void main(String[] args) {
-		boolean flag=(1==1 && 0==0);
-			System.out.println(flag);
+		boolean flag = (1 == 1 && 0 == 0);
+		System.out.println(flag);
 
 	}
 

@@ -10,13 +10,13 @@ public class Test001 {
 	}
 
 	public static void main(String[] args) {
-	//	System.out.println(new StringBuffer().toString().equals(""));
-		StringBuilder sb=new StringBuilder();
-		Set<Long> sets=new HashSet<Long>();
+		// System.out.println(new StringBuffer().toString().equals(""));
+		StringBuilder sb = new StringBuilder();
+		Set<Long> sets = new HashSet<Long>();
 		sets.add(new Long(1));
 		sets.add(new Long(2));
 		sb.append(sets);
-		sb.delete(0,1);
+		sb.delete(0, 1);
 		System.out.println(sb);
 	}
 

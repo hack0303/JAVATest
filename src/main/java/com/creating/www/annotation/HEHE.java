@@ -8,5 +8,5 @@ import java.lang.annotation.Target;
 @Retention(RetentionPolicy.RUNTIME)
 @Target(TYPE)
 public @interface HEHE {
-String info() default "hehe";
+	String info() default "hehe";
 }
